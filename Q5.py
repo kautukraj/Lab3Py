@@ -1,26 +1,21 @@
 
 from Q5input import *
-
+import string
 # Your code - begin
 
 sets=[]
-dic={}
 flag=0
 c=0
+val = False
+alphabet = set(string.ascii_lowercase)
 for i in set1:
     for j in set2:
         sets.append(i+j)
 
 for i in sets:
-    for j in i:
-        if j not in dic:
-            dic[j]=1
-
-        else:
-            dic[j]+=1
-
-            
-            
+    val = set(i.lower()) >= alphabet
+    if val==True:
+        c+=1
 # Your code - end
 print sets
 print c

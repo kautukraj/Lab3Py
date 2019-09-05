@@ -2,7 +2,7 @@ from Q1input import *
 
 # Your code - begin
 output={}
-for i in l:
+for i in inp:
     if i not in output:
         output[i]=1
 
