@@ -1,4 +1,4 @@
-
+from Q5input.py import *
 import string
 # Your code - begin
 sets=[]
