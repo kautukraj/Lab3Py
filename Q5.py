@@ -1,21 +1,26 @@
 
-from Q5input import *
 import string
 # Your code - begin
-
 sets=[]
-flag=0
 c=0
-val = False
-alphabet = set(string.ascii_lowercase)
+
+def ispangram(str): 
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    for char in alphabet: 
+        if char not in str.lower(): 
+            return False
+  
+    return True
+
 for i in set1:
     for j in set2:
         sets.append(i+j)
 
 for i in sets:
-    val = set(i.lower()) >= alphabet
-    if val==True:
+    f=ispangram(i)
+    if f==True:
         c+=1
 # Your code - end
 print sets
 print c
+
